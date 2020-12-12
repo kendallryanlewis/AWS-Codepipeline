@@ -1,0 +1,41 @@
+.noteListMain .header input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid white;
+    width:165px;
+}
+
+.noteListMain .header button{
+    padding: 10px;
+    font-size: 16px;
+    margin:10px;
+    margin-right: 0px;
+    background-color: blue;
+    color:white;
+    border: 2px solid  blue;
+}
+
+.noteListMain .header button:hover {
+    background-color: #003999;
+    border: 2px solid  #003999;
+    cursor:pointer;
+}
+.noteListMain .theList li {
+    color: #333;
+    background-color: rgba(255,255,255, .5);
+    padding:15px;
+    margin-bottom:5px;
+    border-radius:5px;
+    list-style:none;
+
+    transition: background-color .2s ease-out;
+}
+
+.noteListMain .theList li:hover{
+    background-color: pink;
+    cursor:pointer;
+}
+
+ul.theList{
+    padding:0;
+}

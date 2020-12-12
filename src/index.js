@@ -1,17 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import NoteList from "./NoteList";
+import Demo from "./demo";
+import Car from "./w3learning";
+
+var destination = document.querySelector("#container");
+var w3destination = document.querySelector("#w3container");
+var demoDestination = document.querySelector("#demo");
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <div>
+       <NoteList/>
+    </div>,
+    destination
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(
+    <div>
+       <Demo/>
+    </div>,
+    demoDestination
+);
+
+ReactDOM.render(
+    <div>
+       <Car/>
+    </div>,
+    w3destination
+);
+
+//Ensure ids are capitalized ex: <Demo>, <Car>
